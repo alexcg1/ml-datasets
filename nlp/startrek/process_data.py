@@ -1,7 +1,8 @@
 import json
+import os
 
 series = 'TNG'
-input_file = 'all_series_lines.json'
+input_file = os.path.join('data', 'all_series_lines.json')
 output_file = 'startrek_tng.csv'
 
 with open(input_file, 'r') as file:
